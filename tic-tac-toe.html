@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        
+      }
+
+      .field {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        column-gap: 50px;
+        row-gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+      }
+
+      .block {
+        background-color: rgb(25, 25, 25);
+        width: 90px;
+        height: 90px;
+        border-radius: 7px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .header {
+        height: 70px;
+        background-color: rgb(25, 25, 25);
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .img-inside {
+        width: 100%;
+      }
+
+      .winner {
+        color: rgb(25, 25, 25);
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        font-weight: bold;
+        height: 50px;
+      }
+
+      .reset {
+        background-color: rgb(25, 25, 25);
+        color: white;
+        margin-left: 20px;
+        cursor: pointer;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 13px;
+        font-weight: bold;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="header">Tic Tac Toe</div>
+    <div class="winner"></div>
+    <div class="field">
+      <button class="block js-button"></button>
+      <button class="block js-button"></button>
+      <button class="block js-button"></button>
+      <button class="block js-button"></button>
+      <button class="block js-button"></button>
+      <button class="block js-button"></button>
+      <button class="block js-button"></button>
+      <button class="block js-button"></button>
+      <button class="block js-button"></button>
+    </div>
+
+    <script src="tic-tac-toe.js"></script>
+  </body>
+</html>
